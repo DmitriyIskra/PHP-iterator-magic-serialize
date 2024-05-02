@@ -33,10 +33,4 @@ class PeopleList implements Iterator {
     public function valid(): bool{
         return isset($this->list[$this->position]);
     }
-    // public function __get($name) : void
-    // {
-    //     foreach($this->$name as $value) {
-    //         echo $value.PHP_EOL;
-    //     }
-    // }
 }
