@@ -5,8 +5,6 @@ use classes\Person;
 
 include "autoload.php";
 
-$peopleList = new PeopleList();
-
 
 $person1 = new Person();
 $person1->login = 'John';
@@ -27,8 +25,15 @@ echo $person2->password.PHP_EOL;
 
 echo '-----------PeopleList-----------'.PHP_EOL;
 
+$peopleList = new PeopleList();
+
 $peopleList->list = $person1;
 $peopleList->list = $person2;
 
-
-$peopleList->list;
+foreach($peopleList as $key => $value) {
+    // var_dump($key, $value);;
+    echo "value \n".$value;
+    
+    echo "\n";
+}
+// $peopleList->list;

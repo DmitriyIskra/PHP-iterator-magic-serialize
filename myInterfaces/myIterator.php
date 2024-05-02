@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
 
-namespace interfaces;
+namespace myInterfaces;
 
-interface Iterator {
+interface myIterator {
     public function __get(string $name);
 }
